@@ -87,7 +87,7 @@ export default function Features() {
         </div>
       </div>
       <div className="mt-4 text-center text-sm text-slate-600">
-        *Dados do Workana e GitHub de Julho de 2022
+        *Dados do Workana e GitHub de Julho de 2023
       </div>
     </div>
   );
