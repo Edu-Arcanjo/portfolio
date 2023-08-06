@@ -76,8 +76,12 @@ export default function Header() {
       <div className="container relative flex flex-col items-center">
         <div className="flex max-w-5xl flex-col justify-center">
           <div className="relative mx-auto flex flex-col items-center">
-            <p className="mb-4 text-center font-bold text-slate-700 md:ml-2 md:self-start md:text-left md:text-xl">
-              Oi, 👋🏾 sou o Eduardo
+            <p className="mb-4 flex text-center font-bold text-slate-700 md:ml-2 md:self-start md:text-left md:text-xl">
+              Oi,
+              <span className="origin-[70%_70%] animate-waving px-1">
+                👋🏾
+              </span>{" "}
+              sou o Eduardo
             </p>
             <h1 className="relative text-center text-5xl font-black uppercase tracking-wide text-slate-900 sm:text-5xl md:text-left md:text-8xl lg:max-w-none lg:text-9xl">
               React
