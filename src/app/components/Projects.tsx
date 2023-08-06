@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <section className="px-4 md:px-8">
+    <section className="mb-24 px-4 md:px-8">
       <div className="container mx-auto">
         <div className="mt-16 grid grid-cols-1 gap-x-12 gap-y-24 md:grid-cols-2">
           {projects.map((project) => (

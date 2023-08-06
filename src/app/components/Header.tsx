@@ -81,14 +81,16 @@ export default function Header() {
               <span className="origin-[70%_70%] animate-waving px-1">
                 👋🏾
               </span>{" "}
-              sou o Eduardo
+              sou o Eduardo Arcanjo
             </p>
             <h1 className="relative text-center text-5xl font-black uppercase tracking-wide text-slate-900 sm:text-5xl md:text-left md:text-8xl lg:max-w-none lg:text-9xl">
               React
               <br />
               Developer
             </h1>
-            <CopyMail />
+            <div className="mt-8">
+              <CopyMail />
+            </div>
             <div className="hidden md:absolute md:right-2 md:top-12 md:mt-4 md:block lg:right-3 lg:top-14">
               <ul className="flex space-x-4 md:space-x-8">
                 {links.map(({ icon: Icon, href, target, hover }) => (

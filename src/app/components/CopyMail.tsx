@@ -26,33 +26,31 @@ export default function CopyMail() {
   };
 
   return (
-    <div className="mt-8">
-      <TooltipProvider delayDuration={100}>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <button
-              type="button"
-              disabled={copied}
-              onClick={handleEmailCopy}
-              ref={emailRef}
-              className={buttonVariants({
-                intent: copied ? "success" : "primary",
-              })}
-            >
-              {copied ? (
-                <CopyCheckIcon className="md:h-8 md:w-8" />
-              ) : (
-                <MailIcon className="md:h-8 md:w-8" />
-              )}
-              <span className="flex-1 text-center text-sm font-semibold tracking-wide md:text-lg">
-                contato@eduarcanjo.com.br
-              </span>
-            </button>
-          </TooltipTrigger>
-          <TooltipContent>Copiar email</TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    </div>
+    <TooltipProvider delayDuration={100}>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <button
+            type="button"
+            disabled={copied}
+            onClick={handleEmailCopy}
+            ref={emailRef}
+            className={buttonVariants({
+              intent: copied ? "success" : "primary",
+            })}
+          >
+            {copied ? (
+              <CopyCheckIcon className="md:h-8 md:w-8" />
+            ) : (
+              <MailIcon className="md:h-8 md:w-8" />
+            )}
+            <span className="flex-1 text-center text-sm font-semibold tracking-wide md:text-lg">
+              contato@eduarcanjo.com.br
+            </span>
+          </button>
+        </TooltipTrigger>
+        <TooltipContent>Copiar email</TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 }
 

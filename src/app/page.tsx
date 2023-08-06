@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="border-b-8 border-sky-500 pb-24 tracking-wide">
+      <main className="tracking-wide">
         <Features />
         <Projects />
       </main>
