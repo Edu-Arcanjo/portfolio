@@ -2,7 +2,6 @@ import {
   BirdIcon,
   BriefcaseIcon,
   CalendarIcon,
-  CheckCircleIcon,
   MedalIcon,
   StarIcon,
   Users2Icon,
@@ -27,7 +26,7 @@ export default function Features() {
   return (
     <div className="px-2">
       <div className="container mx-auto flex gap-12">
-        <div className="-mt-20 grid w-full grid-cols-1 justify-center gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="z-10 -mt-20 grid w-full grid-cols-1 justify-center gap-y-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="mx-auto w-full max-w-xs border border-slate-200 bg-slate-50 p-8 shadow-md">
             <h2 className="mb-4 text-3xl font-bold text-slate-900">
               Quem sou?
