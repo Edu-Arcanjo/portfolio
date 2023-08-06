@@ -1,13 +1,7 @@
 import React from "react";
 import background from "@/assets/background.jpg";
 import tile from "@/assets/tile.svg";
-import {
-  CopyIcon,
-  FileBadgeIcon,
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-} from "lucide-react";
+import { FileBadgeIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -61,7 +55,7 @@ export default function Header() {
         <ul className="flex space-x-12 md:space-x-8">
           {links.map(({ icon: Icon, href, target, hover }) => (
             <li key={href}>
-              <TooltipProvider delayDuration={0}>
+              <TooltipProvider delayDuration={100}>
                 <Tooltip>
                   <TooltipTrigger>
                     <a
